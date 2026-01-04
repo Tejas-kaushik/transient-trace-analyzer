@@ -19,10 +19,25 @@ Given a CSV trace containing `(time, voltage)`:
 ---
 
 ## Quickstart
+    ### RC example
+```powershell
+$env:PYTHONPATH="src"
+python -m transient_analyzer.cli examples/synthetic_rc.csv --mode rc --out out_rc
+
+## Output files
+- RC outputs (example): `out_rc/plot.png`, `out_rc/report.md`, `out_rc/metrics.json`
+- RLC outputs (example): `out_rlc/plot.png`, `out_rlc/report.md`, `out_rlc/metrics.json`
+
 
 ### 1) Install dependencies
 ```bash
 pip install -r requirements.txt
 
-## Example plot
-![RC plot](images/plot.png)
+## Example plots
+
+### RC (τ)
+![RC plot](images/rc_plot.png)
+
+### RLC (peaks)
+![RLC plot](images/rlc_plot.png)
+
