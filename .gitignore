@@ -11,6 +11,5 @@ build/
 .venv/
 
 # Outputs (generated)
-report.md
 out/
-
+report.md
